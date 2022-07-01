@@ -3,7 +3,7 @@
 
 /**
 * main - prints exactly "and that place of art is useful"
-* . Dora Korper, 2015-10-19",
+* - Dora Korper, 2015-10-19",
 * followed by a new line, to the stardard error.
 * Return: Always 0 (Success)
 */
