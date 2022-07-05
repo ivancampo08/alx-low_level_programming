@@ -17,6 +17,8 @@ int main(void)
 	{
 		putchar(ch);
 	}
+	char ch;
+
 	for (ch = 'a'; ch <= 'f'; ch++)
 	{
 		putchar(10);
