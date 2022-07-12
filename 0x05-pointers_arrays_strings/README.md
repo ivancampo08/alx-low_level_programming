@@ -1,1 +1,1 @@
-this is a pointers, arrays and strings readme file
+this is a Pointers, Arrays and Strings readme file
