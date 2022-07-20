@@ -8,7 +8,7 @@ int check_prime(int, int);
 */
 int is_prime_number(int n)
 {
-	return (chec_prime(n, 1));
+	return (check_prime(n, 1));
 }
 
 /**
