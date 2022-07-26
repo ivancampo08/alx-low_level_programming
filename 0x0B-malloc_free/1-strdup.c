@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stddef.h>
-#include <stdlib.h>
 
 /**
 * _strdup - string deplicator function
@@ -13,7 +11,7 @@ char *_strdup(char *str)
 		char *s;
 
 		if (str == NULL)
-			return (NULL);
+		return (NULL);
 	while (str[i])
 		i++;
 	s = (char *) malloc(i * sizeof(char) + 1);
@@ -21,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	while (j < i)
 	{
-		s[j] == str[j];
+		s[j] = str[j];
 		j++;
 	}
 	s[j] = '\0';
