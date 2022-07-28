@@ -1,12 +1,13 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
 * string_nconcat - this is a string concatenation
 * @s1: param 1
 * @s2: param 2
 * @n: param 3
-* Return: NULL
+* Return: string
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -19,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	for (index = 0; s[index]; index++)
 		len++
-	concat = malloc(sizeof(char) * len + 1);
+	concat = (char *)malloc(sizeof(char) * len + 1);
 	if (concat == NULL)
 		return (NULL);
 	len = 0;
