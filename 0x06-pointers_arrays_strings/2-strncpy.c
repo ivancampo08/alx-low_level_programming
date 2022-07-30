@@ -6,7 +6,7 @@
 * @dest: destinantion.
 * @src: source.
 * @n: amount of bytes from src.
-* Return: the pointer to dest.
+* Return: dest
 */
 
 char *_strncpy(char *dest, char *src, int n)
