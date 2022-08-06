@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
 * main -> assign a random number to the variable n each time
