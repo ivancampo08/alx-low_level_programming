@@ -1,27 +1,22 @@
 #include <stdio.h>
 
 /**
-* main - prints all the numbers of base 16 in lowercase
-* Return: 0 if exited properly, non-zero otherwise
-*/
+ * main - Prints numbers between 0 to 9 and letters between a to f.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	/**
-	 *
-	 * hexadecimal
-	 * 0 1 2 3 4 5 6 7 8 9 a b c d e f
-	 */
-	int n;
-	char ch;
+	int i;
 
-	for (n = 48; n <= 57; n++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(ch);
+		putchar(i);
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
+	for (i = 97; i < 103; i++)
 	{
-		putchar(10);
+		putchar(i);
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
