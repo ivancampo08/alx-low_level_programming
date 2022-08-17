@@ -9,31 +9,34 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *node1, *node2;
+	listint_t *p2;
+	listint_t *prev;
 
-	if (head == NULL || head->next == NULL)
-		return (NULL);
-
-	node1 = head->next;
-	node2 = (head->next)->next;
-
-	while (node2)
+	p2 = head;
+	prev = head;
+	while (head && p2 && p2->next)
 	{
-		if (node1 == node2)
+		head = head->next;
+		p2 = p2->next->next;
+
+		if (head == p2)
 		{
-			node1 = head;
-
-			while (node1 != node2)
+			head = prev;
+			prev =  p2;
+			while (1)
 			{
-				node1 = node1->next;
-				node2 = node2->next;
+				p2 = prev;
+				while (p2->next != head && p2->next != prev)
+			{
+				p2 = p2->next;
 			}
+			if (p2->next == head)
+				break;
 
-			return (node1);
+			head = head->next;
+			}
+			return (p2->next);
 		}
-
-		node1 = node1->next;
-		node2 = (node2->next)->next;
 	}
 
 	return (NULL);
